@@ -1,6 +1,12 @@
 # PENNY-PINCHER
 
-An app that helps user search for the cheapest possible flights within the given date range. Include in the search the airlines that don’t have APIs by utilizing Selenium and web scraping.
+An app that helps users search for the cheapest possible flight tickets within a given date range and trip duration. 
+
+# Technical Details
+
+The app currently searches for tickects only in Condor.com, an airline that don’t have API so other search websites like Expedia or Skyscanner don't show results from this airline.
+
+The search is performed the by selecting all available flights whitin a given date range inputed by the user. It utilises Selenium and web scraping to obtain the price and dates information. One all the neccesary information has been captured, the app proccess it and filters it to display only the cheapest flights to the end user. 
 
 ## AUTHORS
 
