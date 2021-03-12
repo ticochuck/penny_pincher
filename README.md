@@ -4,20 +4,10 @@ An app that helps user search for the cheapest possible flights within the given
 
 ## AUTHORS
 
-[_Leo Kukharau_](https://github.com/LeoKuhorev), [_Joseph Lee_](https://github.com/josephlee3454), [_Chuck Li Villalobos_](https://github.com/ticochuck)
+- [**Chuck Li Villalobos**](https://github.com/ticochuck)
+- [**Joseph Lee**](https://github.com/josephlee3454)
+- [**Leo Kukharau**](https://github.com/LeoKuhorev)
 
-## MVP LAYOUT WIREFRAME
-
-![Wireframe](./assets/wireframe_1.png)
-![Wireframe](./assets/wireframe_2.png)
-
-## MVP ROUTES
-
-![Routing_Diagram](./assets/routing_diagram.png)
-
-## DOM
-
-![DOM](./assets/DOM.png)
 
 ## GETTING STARTED:
 
@@ -45,11 +35,11 @@ ALLOWED_HOSTS=localhost,127.0.0.1 (for testing)
 ## API:
 
 `/` - landing page;  
-`user/register/` - register page, handles user registration;  
-`user/login/` - login page, allows a user to log in;  
-`user/profile/` - profile page, allows a user to view and edit their profile information (login required);  
-`user/logout/` - logout page, is shown when a user it logged out (login required);  
-`search/` - search page, allows a user to submit new search request(login required);  
+`user/register/` - register page, handles users registration;  
+`user/login/` - login page, allows users to log in;  
+`user/profile/` - profile page, allows users to view and edit their profile information (login required);  
+`user/logout/` - logout page, is shown when users are logged out (login required);  
+`search/` - search page, allows users to submit new search request(login required);  
 `delete_search/<search_id>/` - takes a search id and deletes it from DB (login required);  
 `wait` - waiting page, is shown while the search results are being processed, also shows webscraped random fact of the day to entertain the user (login required, can only be accessed from the `search` page);  
 `results/<search_id>/` - shows search results (login required);  
@@ -64,6 +54,19 @@ ALLOWED_HOSTS=localhost,127.0.0.1 (for testing)
 [Requirements](./docs/requirements.md)  
 [Workflow](./docs/workflow.md)  
 [Project Management](https://github.com/401n1-midterm/penny-pincher/projects/1)
+
+### MVP LAYOUT WIREFRAME
+
+![Wireframe](./assets/wireframe_1.png)
+![Wireframe](./assets/wireframe_2.png)
+
+### MVP ROUTES
+
+![Routing_Diagram](./assets/routing_diagram.png)
+
+### DOM
+
+![DOM](./assets/DOM.png)
 
 ### DB Schema:
 
