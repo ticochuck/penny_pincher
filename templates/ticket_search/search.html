@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+{% load static %}
+
+
+{% block link %}
+  <!-- Datepicker -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gijgo/1.9.13/combined/css/gijgo.min.css">
+{% endblock link %}
+
+
+{% block content %}
+  <h1 class="content text-center mb-4">Search</h1>
+
+  <div class="border border-light p-3 white-background">
+    <form method="post" class="content text-center">
+      {% csrf_token %}
+      <fieldset>
+        {{ form|crispy }}
+      </fieldset>
+
+      <button id="search_submit" type="submit" class="btn btn-mdb-color">
+        Submit
+      </button>
+    </form>
+  </div>
+{% endblock content %}
+
+
+{% block script %}
+  <!-- Datepicker -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gijgo/1.9.13/combined/js/gijgo.min.js"></script>
+  <script src="{% static 'js/search.js' %}"></script>
+{% endblock script %}
